@@ -1,0 +1,13 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/online_ticket_booking</property>
+        <property name="hibernate.connection.username">windowsdb</property>
+        <property name="hibernate.connection.password">admin@123</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.OnlineTicketBooking.Entity.User"/>
+    <mapping class="com.OnlineTicketBooking.Entity.Event"/>
+    <mapping class="com.OnlineTicketBooking.Entity.Ticket"/>
+    </session-factory>
+</hibernate-configuration>
